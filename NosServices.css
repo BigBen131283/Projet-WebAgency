@@ -1,0 +1,222 @@
+/*Fonts*/
+
+@font-face
+{
+    font-family: 'roboto-black';
+    src: url('fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'roboto-blackitalic';
+    src: url('fonts/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face 
+{
+    font-family: 'roboto-bold';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'roboto-bolditalic';
+    src: url('fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'roboto-italic';
+    src: url('fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'roboto-light';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'roboto-lightitalic';
+    src: url('fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'roboto-medium';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'roboto-mediumitalic';
+    src: url('fonts/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'roboto-regular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'roboto-thin';
+    src: url('fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+
+body
+{
+    font-family: 'roboto-black';
+}
+
+/*style des icônes et séparateurs*/
+
+i
+{
+    font-size: 1.9em;
+    color: #5CADD3;
+}
+
+.cercle
+{
+    border: 2px solid #E7E7E7;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    position: relative;
+}
+
+.blue_pt
+{
+    border: 1px solid #5CADD3;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #5CADD3;
+}
+
+.wht_pt
+{
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #FFF;
+}
+
+.cercle .blue_pt
+{
+    position: absolute;
+    right: -7px;
+}
+
+.separateur
+{
+    width: 161px;
+    border-bottom: 1px solid #E7E7E7;
+    position: relative;
+}
+
+.separateur .blue_pt
+{
+    position: absolute;
+    left: 75px;
+    bottom: -7px;
+}
+
+.separateur .wht_pt
+{
+    position: absolute;
+    left: 72px;
+    bottom: -10px;
+}
+
+/*Placements*/
+
+.prez
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prez h1
+{
+    font-size: 3em;
+}
+
+.prez p
+{
+    text-align: center;
+    width: 50%;
+}
+
+.corpus
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.corpus .apple
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpus ul
+{
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.corpus li
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc
+{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 64px;
+    text-align: left;
+}
+
+.desc h2
+{
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+

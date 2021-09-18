@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WebAgency - Bienvenue</title>
+        <link rel="stylesheet" href="webagency_style.css">
+    </head>
+
+    <body>
+<!--Menu-->
+            <div id="Menu">
+                <header><!--en doublon avec l'id Menu-->
+                    <div id="logo">
+                        <img src="images/logo.png" alt="Logo WebAgency" title="Bienvenue !">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Accueil</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>         
+<!--En-tête-->
+        <div id="bloc_page">
+            <div id="en-tête">
+                <div id="bandeau">
+                    <h1>
+                        <span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !
+                    </h1>
+                    <p>
+                        Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+                    </p>
+                    <a href="#" class="bouton_bleu">Plus d'infos</a>
+                </div>
+            </div>
+<!--Services-->
+            <section id="services">
+                <div id="prez">
+                    <h1>Nos Services</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ad quos corrupti rerum laudantium sequi, molestiae nihil ex accusantium maiores non velit voluptates eveniet sed unde enim repellat nulla quis.</p>
+                </div>
+                <div id="def">
+                    <div id="pcapple">
+                        <img src="images/main-feature.png" alt="Un écran">
+                    </div>
+                    <div id="listserv">
+                        <ul>
+                            <li>
+                                <h2>UX design</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, officiis? Dolore voluptatum quam error labore, veniam nam accusamus cupiditate odio, dolor libero doloremque vel natus doloribus aut corporis tempore voluptatem.</p>
+                            </li>
+                            <li>
+                                <h2>UI design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate pariatur earum porro soluta suscipit est temporibus, molestias maxime. Neque quaerat illo eos vitae beatae a at animi veniam nostrum?</p>
+                            </li>
+                            <li>
+                                <h2>SEO</h2>
+                                <p>Le Search Engine Optimization, ou SEO, est le terme qui dfinit l'ensemble des techniques mises en oeuvres pour améliorer la position d'un site web sur les pages de résultats des moteurs de recherches. En d'autres termes il s'agit du référencement de votre site.</p>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+                
+            </section>
+<!--Portfolio-->
+            <section id="projets">
+                <div id="projintro">
+                    <h1>Nos projets</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus dolorum iste molestiae earum adipisci aperiam cumque error unde eaque deleniti maxime labore neque temporibus dolores consectetur saepe, nemo eligendi.</p>
+                </div>
+                <div id="navproj">
+                    <ul>
+                        <li><a href="allworks">All Works</a></li>
+                        <li><a href="creative">Creative</a></li>
+                        <li><a href="corpo">Corporate</a></li>
+                        <li><a href="porfolio">Porfolio</a></li>
+                    </ul>
+                </div>
+                <div id="portfolio">
+                    <img src="images/portfolio/01.jpg" alt="Projet 1" class="creative">
+                    <img src="images/portfolio/02.jpg" alt="Projet 2" class="corpo">
+                    <img src="images/portfolio/03.jpg" alt="Projet 3" class="creative">
+                    <img src="images/portfolio/04.jpg" alt="Projet 4" class="corpo">
+                    <img src="images/portfolio/05.jpg" alt="Projet 5" class="portfolio">
+                    <img src="images/portfolio/06.jpg" alt="Projet 6" class="corpo">
+                    <img src="images/portfolio/07.jpg" alt="Projet 7" class="creative">
+                    <img src="images/portfolio/08.jpg" alt="projet 8" class="portfolio">
+                </div>
+            </section>
+<!--Contact-->
+            <section id="contact">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221424608048!2d2.3476369158538897!3d48.8730553076277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1631110951571!5m2!1sfr!2sfr" width="1900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div id="formulaire">
+                        <form method="post" action="traitement.php">
+                            <h1>Contact Info</h1>
+                            <h2>WebAgency SAS</h2>
+                            <p>25 rue d'Hauteville 75010 Paris <br>
+                            Tel : 01 02 03 04 05
+                            </p>
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" value="Name" required>
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" value="Email" required>
+                            <label for="subject"></label>
+                            <input type="text" name="subject" id="subject" value="Subject" required>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" cols="30" rows="10" required>Message</textarea>
+                            <input type="submit" value="Send Message" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+<!--Pied de page-->
+            <footer>
+                
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,321 @@
+/*fonts*/
+
+@font-face
+{
+    font-family: 'FontAwesome';
+    src: url('.eot');
+    src: url('.eot?#iefix') format('embededded-opentype'),
+         url('.woff') format('woff'),
+         url('.ttf') format('truetype'),
+         url('.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Glyphicons';
+    src: url('.eot');
+    src: url('.eot?#iefix') format('embedded-opentype'),
+         url('.woff') format('woff'),
+         url('.ttf')format('truetype'),
+         url('.svg#Glyphicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'roboto-black';
+    src: url('.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Page*/
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: rgb(137, 143, 145);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#bloc_page
+{
+    width: 100%;
+    margin: auto;
+    padding-top: 89px;
+}
+
+#Menu
+{
+    width: 100%;
+    margin: auto;
+    position: fixed;
+}
+
+/*Menu*/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    opacity: 1;
+}
+
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li
+{
+    display: flex;
+    width: 70px;
+    height: 57px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: rgb(137, 143, 145);
+}
+
+nav li:hover
+{
+    box-shadow: 0px -3px 0px #5cadd3;
+}
+
+/*en-tête*/
+
+#en-tête
+{
+    height: 600px;
+}
+
+#bandeau
+{
+    background-image: url(images/slider/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+#bandeau h1
+{
+    color: white;
+    width: 45%;
+}
+
+#bandeau p
+{
+    color: white;
+}
+
+#bandeau span
+{
+    color: #5cadd3;
+}
+
+.bouton_bleu
+{
+    height: 30px;
+    width: 145px;
+    background-color: #5cadd3;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton_bleu:hover
+{
+    box-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 3px black;
+}
+
+#prez
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#def
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#listserv ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Nos projets*/
+
+#projets
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#projintro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navproj
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#navproj li
+{
+    list-style-type: none;
+    display: flex;
+    border: 1px solid black;
+    width: 90px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#navproj a
+{
+    text-decoration: none;
+}
+
+#navproj ul
+{
+    display: flex;
+}
+
+#portfolio
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#portfolio img
+{
+    width: 20%;
+    min-width: 300px;
+    max-width: 600px;
+    margin:2%;
+}
+
+#portfolio img:hover
+{
+    
+}
+
+/*Contact*/
+
+#contact
+{
+    display: flex;
+    position: relative;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulaire
+{
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    width: 400px;
+    height: 550px;
+    background-color: rgba(221, 216, 216, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#contact
+{
+    color: black;
+}
+
+form p
+{
+    margin-top: 0;
+}
+
+form h2
+{
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+form input
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form textarea
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form .btn
+{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(108, 213, 230);
+    color: white;
+    border: none;
+    border-bottom: 3px solid rgb(39, 151, 196);
+    padding-bottom: 5px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .btn:hover
+{
+    box-shadow: 3px 3px 3px rgb(39, 151, 196);
+    cursor: pointer;
+}
+
+
