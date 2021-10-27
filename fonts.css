@@ -1,0 +1,141 @@
+/*Fonts*/
+p
+{
+    font-size: 2em;
+}
+
+@font-face
+{
+    font-family: 'roboto-black';
+    src: url('fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.roboto-black
+{
+    font-family: 'roboto-black';
+}
+
+@font-face 
+{
+    font-family: 'roboto-blackitalic';
+    src: url('fonts/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.roboto-blackitalic
+{
+    font-family: 'roboto-blackitalic';
+}
+
+@font-face 
+{
+    font-family: 'roboto-bold';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.roboto-bold
+{
+    font-family: 'roboto-bold';
+}
+
+@font-face 
+{
+    font-family: 'roboto-bolditalic';
+    src: url('fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.roboto-bolditalic
+{
+    font-family: 'roboto-bolditalic';
+}
+
+@font-face
+{
+    font-family: 'roboto-italic';
+    src: url('fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.roboto-italic
+{
+    font-family: 'roboto-italic';
+}
+
+@font-face
+{
+    font-family: 'roboto-light';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.roboto-light
+{
+    font-family: 'roboto-light';
+}
+
+@font-face
+{
+    font-family: 'roboto-lightitalic';
+    src: url('fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.roboto-lightitalic
+{
+    font-family: 'roboto-lightitalic';
+}
+
+@font-face
+{
+    font-family: 'roboto-medium';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+.roboto-medium
+{
+    font-family: 'roboto-medium';
+}
+
+
+@font-face
+{
+    font-family: 'roboto-mediumitalic';
+    src: url('fonts/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+.roboto-mediumitalic
+{
+    font-family: 'roboto-mediumitalic';
+}
+
+@font-face
+{
+    font-family: 'roboto-regular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+.roboto-regular
+{
+    font-family: 'roboto-regular';
+}
+
+@font-face
+{
+    font-family: 'roboto-thin';
+    src: url('fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+.roboto-thin
+{
+    font-family: 'roboto-thin';
+}

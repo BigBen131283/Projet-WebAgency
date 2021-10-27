@@ -1,0 +1,311 @@
+body
+{
+    margin: 0;
+}
+
+.projets
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projets
+{
+    background-color: #F5F5F5;
+}
+
+/*Menu de navigation des projets*/
+
+
+
+.nav-proj
+{
+    width: 30%;
+    height: 40px;
+    background-color: #E5E5E5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc_btn
+{
+    width: 25%;
+    height: 100%;
+}
+
+.bloc_btn a
+{
+    text-decoration: none;
+}
+
+/*#lft*/
+
+#lft
+{
+    position: relative;
+    height: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#5CADD3;
+    border-bottom: 4px solid #468CAD;
+    border-top-left-radius: 5px;
+}
+
+#lft a
+{
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lft i
+{
+    position: absolute;
+    bottom: -13px;
+    font-size: 1.3em;
+    color: #468CAD;
+}
+/*#lft:hover*/
+#lft:hover
+{
+    height: 36px;
+    width: 100%;
+    background-color: #5CADD3;
+    border-bottom: 4px solid #468CAD;
+}
+
+#lft:hover a
+{
+    color: #FFF;
+}
+
+#lft:hover i
+{
+    color: #468CAD;
+}
+
+/*#c_lft*/
+
+#c_lft
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+#c_lft a
+{
+    color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c_lft i
+{
+    position: absolute;
+    bottom: -13px;
+    font-size: 1.3em;
+    color: #F5F5F5;
+}
+
+/*#c_lft:hover*/
+
+#c_lft:hover 
+{
+    background-color: #5CADD3;
+    height: 36px;
+    border-bottom: 4px solid #468CAD;
+}
+
+#c_lft:hover a
+{
+    color: #FFF;
+}
+
+#c_lft:hover i
+{
+    color: #468CAD;
+}
+
+/*#c_lft:target*/
+
+#c_lft:target
+{
+    background-color: #5CADD3;
+    height: 36px;
+    border-bottom: 4px solid #468CAD;
+}
+
+#c_lft:target a
+{
+    color: #FFF;
+}
+
+#c_lft:target i
+{
+    color: #468CAD;
+}
+
+/*#c_rgt*/
+
+#c_rgt
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+#c_rgt a
+{
+    color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c_rgt i
+{
+    position: absolute;
+    bottom: -13px;
+    font-size: 1.3em;
+    color: #F5F5F5;
+}
+
+/*#c_rgt:hover*/
+
+#c_rgt:hover 
+{
+    background-color: #5CADD3;
+    height: 36px;
+    border-bottom: 4px solid #468CAD;
+}
+
+#c_rgt:hover a
+{
+    color: #FFF;
+}
+
+#c_rgt:hover i
+{
+    color: #468CAD;
+}
+
+/*#c_rgt:target*/
+
+#c_rgt:target
+{
+    background-color: #5CADD3;
+    height: 36px;
+    border-bottom: 4px solid #468CAD;
+}
+
+#c_rgt:target a
+{
+    color: #FFF;
+}
+
+#c_rgt:target i
+{
+    color: #468CAD;
+}
+
+/*#rgt*/
+
+#rgt
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+    border-top-right-radius: 5px ;
+}
+
+#rgt a
+{
+    color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rgt i
+{
+    position: absolute;
+    bottom: -13px;
+    font-size: 1.3em;
+    color: #F5F5F5;
+}
+
+/*#rgt:hover*/
+
+#rgt:hover 
+{
+    background-color: #5CADD3;
+    height: 36px;
+    border-bottom: 4px solid #468CAD;
+}
+
+#rgt:hover a
+{
+    color: #FFF;
+}
+
+#rgt:hover i
+{
+    color: #468CAD;
+}
+
+/*#rgt:target*/
+
+#rgt:target
+{
+    background-color: #5CADD3;
+    height: 36px;
+    border-bottom: 4px solid #468CAD;
+}
+
+#rgt:target a
+{
+    color: #FFF;
+}
+
+#rgt:target i
+{
+    color: #468CAD;
+}
+
+/*modif de #lft au :target des autres boutons*/
+
+#lft #c_lft:target 
+{
+    background-color: #E5E5E5;
+}

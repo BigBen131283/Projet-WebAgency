@@ -81,11 +81,6 @@
 }
 
 
-body
-{
-    font-family: 'roboto-black';
-}
-
 /*style des icônes et séparateurs*/
 
 i
@@ -218,5 +213,121 @@ i
     font-size: 1.2em;
     margin-top: 0;
 }
+
+/*Placement et effets*/
+
+#Projets
+{
+    position: absolute;
+    top: -70px;
+}
+
+.projets
+{background-color: #F5F5F5;}
+
+/*Menu de navigation des projets*/
+
+.nav-proj
+{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-proj ul
+{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0; /*pourquoi?*/
+    width: 30%;
+    height: 40px;
+    background-color: #E5E5E5;
+    margin: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nav-proj li
+{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-proj i
+{
+    position: absolute;
+    font-size: 1.8em;
+    bottom: -16px;
+    color: #F5F5F5;
+}
+
+
+.nav-proj a
+{
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lft
+{
+    border-top-left-radius: 5px;
+}
+
+.rgt
+{
+    border-top-right-radius: 5px;
+}
+
+/*Bouton All Works en bleu par défaut*/
+
+.lft
+{
+    background-color: #5CADD3;
+    border-bottom: 4px solid #468CAD;
+    color: #FFF;
+}
+
+li.lft
+{
+    height: 37px;
+}
+
+li.lft a
+{
+    color: #FFF;
+}
+
+li.lft i
+{
+    color: #468CAD;
+}
+
+/*Menu de navigation des projets - changement au :hover*/
+
+.nav-proj li:hover i
+{
+    color: #468CAD;
+}
+
+.nav-proj li:hover
+{
+    border-bottom: 4px solid #468CAD;
+    height: 37px;
+    background-color: #5CADD3;
+}
+
+.nav-proj li:hover a
+{
+    color: #FFF;
+}
+
 
 

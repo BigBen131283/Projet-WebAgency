@@ -1,0 +1,139 @@
+/*style des icônes et séparateurs*/
+
+.blue_pt
+{
+    border: 1px solid #5CADD3;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #5CADD3;
+}
+
+.wht_pt
+{
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #FFF;
+}
+
+.cercle .blue_pt
+{
+    position: absolute;
+    right: -7px;
+}
+
+.separateur
+{
+    width: 161px;
+    border-bottom: 1px solid #E7E7E7;
+    position: relative;
+}
+
+.separateur .blue_pt
+{
+    position: absolute;
+    left: 75px;
+    bottom: -7px;
+}
+
+.separateur .wht_pt
+{
+    position: absolute;
+    left: 72px;
+    bottom: -10px;
+}
+
+/*Placement et effets*/
+
+#Projets
+{
+    background-color: #F5F5F5;
+}
+
+.nav-proj
+{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-proj ul
+{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0; /*pourquoi?*/
+    width: 30%;
+    height: 40px;
+    background-color: #E5E5E5;
+    margin: 30px;
+}
+
+.nav-proj li
+{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-proj i
+{
+    position: absolute;
+    font-size: 1.8em;
+    bottom: -17px;
+    color: #F5F5F5;
+}
+
+.nav-proj li:hover i
+{
+    color: #468CAD;
+}
+
+.nav-proj li:hover
+{
+    border-bottom: 4px solid #468CAD;
+    height: 37px;
+    background-color: #5CADD3;
+}
+
+.nav-proj li:hover a
+{
+    color: #FFF;
+}
+
+li .lft
+{
+    border-radius: 5px;
+}
+
+.nav-proj a
+{
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Portfolio*/
+
+.portfolio
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio img
+{
+    width: 20%;
+    margin: 1%;
+    min-width: 300px;
+    max-width: 600px;
+}

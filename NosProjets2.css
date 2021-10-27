@@ -1,0 +1,44 @@
+/*Style de la section*/
+
+body
+{
+    margin: 0;
+}
+
+#Projets
+{
+    background-color: #F5F5F5;
+}
+
+.img_slider ul
+{
+    list-style-type: none;
+}
+
+
+
+/*Images responsives*/
+
+.img_slide
+{
+    position: relative;
+    padding-bottom: 66.667%;
+    height: 0;
+}
+
+.img1
+{
+    background-image: url(images/portfolio/01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+/*Calque par slide au :hover*/
+
