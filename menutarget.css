@@ -1,0 +1,74 @@
+body
+{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-proj
+{
+    display: flex;
+    width: 30%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 14px;
+    overflow: hidden;
+}
+
+#rgt, #c_rgt, #c_lft, #lft
+{
+    display: flex;
+    width: 100%;
+}
+
+.btn
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.btn a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.nav-proj .btn1 a
+{
+    color: white;
+}
+
+.nav-proj .btn1
+{
+    background-color: cyan;
+}
+
+#c_lft:target .btn1, #c_rgt:target .btn1, #rgt:target .btn1
+{
+    background-color: burlywood;
+}
+
+#c_lft:target .btn1 a, #c_rgt:target .btn1 a, #rgt:target .btn1 a
+{
+    color: black;
+}
+
+#c_lft:target .btn2, #c_rgt:target .btn3, #rgt:target .btn4
+{
+    background-color: cyan;
+}
+
+.btn a:hover
+{
+    background-color: cyan;
+}
+
