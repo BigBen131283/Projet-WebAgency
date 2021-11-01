@@ -494,181 +494,171 @@ i
 }
 
 .projets
-{background-color: #F5F5F5;}
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F5F5;
+}
 
-/*Menu de navigation des projets*/
+/*Propriétés des boutons de navigation*/
 
 .nav-proj
 {
     display: flex;
-    justify-content: center;
-}
-
-.nav-proj ul
-{
-    list-style-type: none;
-    display: flex;
-    padding-left: 0; /*pourquoi?*/
     width: 30%;
     height: 40px;
-    background-color: #E5E5E5;
-    margin: 30px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding-bottom: 14px;
+    overflow: hidden;
 }
 
-.nav-proj li
+#lft
 {
-    width: 25%;
+    width: 100%;
+}
+
+#rgt
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.boutons
+{
+    width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+}
+
+.btn
+{
+    width: 25%;
+    background-color: #E5E5E5;
+    display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.nav-proj i
+.btn i
 {
     position: absolute;
-    font-size: 1.8em;
-    bottom: -16px;
+    bottom: -13px;
+    font-size: 1.3em;
     color: #F5F5F5;
 }
 
-
-.nav-proj a
+.btn a
 {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #000;
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.lft
-{
-    border-top-left-radius: 5px;
-}
+/*modifier la couleur au :hover*/
 
-.rgt
+.btn:hover
 {
-    border-top-right-radius: 5px;
-}
-
-/*Bouton All Works en bleu par défaut*/
-
-.lft
-{
+    height: 36px;
     background-color: #5CADD3;
     border-bottom: 4px solid #468CAD;
-    color: #FFF;
 }
 
-li.lft
-{
-    height: 37px;
-}
-
-li.lft a
+.btn:hover a
 {
     color: #FFF;
 }
 
-li.lft i
+.btn:hover i
 {
     color: #468CAD;
 }
 
-/*Menu de navigation des projets - changement au :hover*/
-
-.nav-proj li:hover i
+#c_lft:target .btn1:hover, #c_rgt:target .btn1:hover, #rgt:target .btn1:hover
 {
-    color: #468CAD;
-}
-
-.nav-proj li:hover
-{
-    border-bottom: 4px solid #468CAD;
-    height: 37px;
+    height: 36px;
     background-color: #5CADD3;
+    border-bottom: 4px solid #468CAD;
 }
 
-.nav-proj li:hover a
+#c_lft:target .btn1:hover a, #c_rgt:target .btn1:hover a, #rgt:target .btn1:hover a
 {
     color: #FFF;
 }
 
-/*Menu de navigation des projets - changement au :focus*/
-
-/*Creative .c_lft*/
-
-.c_lft:focus-within
-{
-    background-color: #5CADD3;
-    border-bottom: 4px solid #468CAD;
-    height: 37px;
-}
-
-.c_lft:focus-within a
-{
-    color: #FFF;
-}
-
-.c_lft:focus-within i
+#c_lft:target .btn1:hover i, #c_rgt:target .btn1:hover i, #rgt:target .btn1:hover i
 {
     color: #468CAD;
 }
 
-/*Corporate .c_rgt*/
-
-.c_rgt:focus-within
+/*All Works par défaut en bleu*/
+.btn1
 {
+    height: 36px;
     background-color: #5CADD3;
     border-bottom: 4px solid #468CAD;
-    height: 37px;
 }
 
-.c_rgt:focus-within a
+.btn1 a
 {
     color: #FFF;
 }
 
-.c_rgt:focus-within i
+.btn1 i
 {
     color: #468CAD;
 }
 
-/*Portfolio .rgt*/
-
-.rgt:focus-within
+/*Modification des boutons au target*/
+#c_lft:target .btn2, #c_rgt:target .btn3, #rgt:target .btn4
 {
+    height: 36px;
     background-color: #5CADD3;
     border-bottom: 4px solid #468CAD;
-    height: 37px;
 }
 
-.rgt:focus-within a
+#c_lft:target .btn2 a, #c_rgt:target .btn3 a, #rgt:target .btn4 a
 {
     color: #FFF;
 }
 
-.rgt:focus-within i
+#c_lft:target .btn2 i, #c_rgt:target .btn3 i, #rgt:target .btn4 i
 {
     color: #468CAD;
 }
 
-/* désélectionner All Works quand on clique sur la nav*/
+/*Désélectionner All Works quand l'un des 3 autres boutons est sélectionné*/
 
-.c_lft:focus-within .lft
+#c_lft:target .btn1, #c_rgt:target .btn1, #rgt:target .btn1
+{
+    height: 100%;
+    background-color: #E5E5E5;
+    border-bottom: none;
+}
+
+#c_lft:target .btn1 a, #c_rgt:target .btn1 a, #rgt:target .btn1 a
 {
     color: #000;
-    height: 40px;
-    background-color: #E5E5E5;
 }
 
-/*Portfolio*/
+#c_lft:target .btn1 i, #c_rgt:target .btn1 i, #rgt:target .btn1 i
+{
+    color: #F5F5F5;
+}
+
+/*Porfolio avec des images responsives et un affichage sélectif selon le bouton sélectionné*/
 
 /*Portfolio en responsive*/
 
@@ -763,6 +753,22 @@ li.lft i
     justify-content: center;
 }
 
+/*Gestion de l'affichage en fonction du thème choisi*/
+
+#c_lft:target .thm2, #c_lft:target .thm3
+{
+    display: none;
+}
+
+#c_rgt:target .thm1, #c_rgt:target .thm3
+{
+    display: none;
+}
+
+#rgt:target .thm1, #rgt:target .thm2
+{
+    display: none;
+}
 
 /*Contact*/
 
@@ -795,6 +801,8 @@ iframe
     background-color: rgba(162, 220, 243, 0.7);
     pointer-events: none;
 }
+
+
 
 form
 {
@@ -874,9 +882,24 @@ form .btn:hover
 @media screen and (max-width: 768px)
 {
     /*Accueil*/
-    .prez_
+    .slider_css h1
     {
         font-size: 1em;
+    }
+
+    .prez_
+    {
+        top: 50%;
+    }
+
+    .slider_css .circle_lft
+    {
+        top: 38%;
+    }
+
+    .slider_css .circle_rgt
+    {
+        top: 38%;
     }
 
     /*Nos Services*/
@@ -931,5 +954,25 @@ form .btn:hover
     .calque
     {
         height: 600px;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    /*Menu*/
+    header
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo
+    {
+        padding-top: 5px;
+    }
+
+    #Menu ul
+    {
+        padding: 0;
     }
 }
