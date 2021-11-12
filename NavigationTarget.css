@@ -3,261 +3,72 @@ body
     margin: 0;
 }
 
+/*Projets*/
+
+/*Placement et effets*/
+
+#Projets
+{
+    position: absolute;
+    top: -70px;
+}
+
 .projets
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.projets
-{
     background-color: #F5F5F5;
 }
 
-/*Menu de navigation des projets*/
-
-
+/*Propriétés des boutons de navigation*/
 
 .nav-proj
 {
+    display: flex;
     width: 30%;
     height: 40px;
-    background-color: #E5E5E5;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 14px;
+    overflow: hidden;
 }
-
-.bloc_btn
-{
-    width: 25%;
-    height: 100%;
-}
-
-.bloc_btn a
-{
-    text-decoration: none;
-}
-
-/*#lft*/
 
 #lft
 {
-    position: relative;
-    height: 36px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#5CADD3;
-    border-bottom: 4px solid #468CAD;
-    border-top-left-radius: 5px;
 }
-
-#lft a
-{
-    color: #FFF;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#lft i
-{
-    position: absolute;
-    bottom: -13px;
-    font-size: 1.3em;
-    color: #468CAD;
-}
-/*#lft:hover*/
-#lft:hover
-{
-    height: 36px;
-    width: 100%;
-    background-color: #5CADD3;
-    border-bottom: 4px solid #468CAD;
-}
-
-#lft:hover a
-{
-    color: #FFF;
-}
-
-#lft:hover i
-{
-    color: #468CAD;
-}
-
-/*#c_lft*/
-
-#c_lft
-{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #E5E5E5;
-}
-
-#c_lft a
-{
-    color: #000;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#c_lft i
-{
-    position: absolute;
-    bottom: -13px;
-    font-size: 1.3em;
-    color: #F5F5F5;
-}
-
-/*#c_lft:hover*/
-
-#c_lft:hover 
-{
-    background-color: #5CADD3;
-    height: 36px;
-    border-bottom: 4px solid #468CAD;
-}
-
-#c_lft:hover a
-{
-    color: #FFF;
-}
-
-#c_lft:hover i
-{
-    color: #468CAD;
-}
-
-/*#c_lft:target*/
-
-#c_lft:target
-{
-    background-color: #5CADD3;
-    height: 36px;
-    border-bottom: 4px solid #468CAD;
-}
-
-#c_lft:target a
-{
-    color: #FFF;
-}
-
-#c_lft:target i
-{
-    color: #468CAD;
-}
-
-/*#c_rgt*/
-
-#c_rgt
-{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #E5E5E5;
-}
-
-#c_rgt a
-{
-    color: #000;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#c_rgt i
-{
-    position: absolute;
-    bottom: -13px;
-    font-size: 1.3em;
-    color: #F5F5F5;
-}
-
-/*#c_rgt:hover*/
-
-#c_rgt:hover 
-{
-    background-color: #5CADD3;
-    height: 36px;
-    border-bottom: 4px solid #468CAD;
-}
-
-#c_rgt:hover a
-{
-    color: #FFF;
-}
-
-#c_rgt:hover i
-{
-    color: #468CAD;
-}
-
-/*#c_rgt:target*/
-
-#c_rgt:target
-{
-    background-color: #5CADD3;
-    height: 36px;
-    border-bottom: 4px solid #468CAD;
-}
-
-#c_rgt:target a
-{
-    color: #FFF;
-}
-
-#c_rgt:target i
-{
-    color: #468CAD;
-}
-
-/*#rgt*/
 
 #rgt
 {
-    position: relative;
-    height: 100%;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E5E5E5;
-    border-top-right-radius: 5px ;
+    height: 100%;
 }
 
-#rgt a
+.boutons
 {
-    color: #000;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.btn
+{
+    width: 25%;
+    background-color: #E5E5E5;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-#rgt i
+.btn i
 {
     position: absolute;
     bottom: -13px;
@@ -265,47 +76,216 @@ body
     color: #F5F5F5;
 }
 
-/*#rgt:hover*/
-
-#rgt:hover 
+.btn a
 {
-    background-color: #5CADD3;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*modifier la couleur au :hover*/
+
+.btn:hover
+{
     height: 36px;
+    background-color: #5CADD3;
     border-bottom: 4px solid #468CAD;
 }
 
-#rgt:hover a
+.btn:hover a
 {
     color: #FFF;
 }
 
-#rgt:hover i
+.btn:hover i
 {
     color: #468CAD;
 }
 
-/*#rgt:target*/
-
-#rgt:target
+#c_lft:target .btn1:hover, #c_rgt:target .btn1:hover, #rgt:target .btn1:hover
 {
-    background-color: #5CADD3;
     height: 36px;
+    background-color: #5CADD3;
     border-bottom: 4px solid #468CAD;
 }
 
-#rgt:target a
+#c_lft:target .btn1:hover a, #c_rgt:target .btn1:hover a, #rgt:target .btn1:hover a
 {
     color: #FFF;
 }
 
-#rgt:target i
+#c_lft:target .btn1:hover i, #c_rgt:target .btn1:hover i, #rgt:target .btn1:hover i
 {
     color: #468CAD;
 }
 
-/*modif de #lft au :target des autres boutons*/
-
-#lft #c_lft:target 
+/*All Works par défaut en bleu*/
+.btn1
 {
+    height: 36px;
+    background-color: #5CADD3;
+    border-bottom: 4px solid #468CAD;
+}
+
+.btn1 a
+{
+    color: #FFF;
+}
+
+.btn1 i
+{
+    color: #468CAD;
+}
+
+/*Modification des boutons au target*/
+#c_lft:target .btn2, #c_rgt:target .btn3, #rgt:target .btn4
+{
+    height: 36px;
+    background-color: #5CADD3;
+    border-bottom: 4px solid #468CAD;
+}
+
+#c_lft:target .btn2 a, #c_rgt:target .btn3 a, #rgt:target .btn4 a
+{
+    color: #FFF;
+}
+
+#c_lft:target .btn2 i, #c_rgt:target .btn3 i, #rgt:target .btn4 i
+{
+    color: #468CAD;
+}
+
+/*Désélectionner All Works quand l'un des 3 autres boutons est sélectionné*/
+
+#c_lft:target .btn1, #c_rgt:target .btn1, #rgt:target .btn1
+{
+    height: 100%;
     background-color: #E5E5E5;
+    border-bottom: none;
+}
+
+#c_lft:target .btn1 a, #c_rgt:target .btn1 a, #rgt:target .btn1 a
+{
+    color: #000;
+}
+
+#c_lft:target .btn1 i, #c_rgt:target .btn1 i, #rgt:target .btn1 i
+{
+    color: #F5F5F5;
+}
+
+/*Porfolio avec des images responsives et un affichage sélectif selon le bouton sélectionné*/
+
+/*Portfolio en responsive*/
+
+.portfolio
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .proj
+{
+    width: 20%;
+    min-width: 300px;
+    max-width: 600px;
+    max-height: 400px;
+    min-height: 200px;
+    margin: 1%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.proj img
+{
+    width: 100%;
+}
+
+/*Descrition par translation au :hover*/
+
+.volet
+{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.volet p
+{
+    margin: 0;
+}
+
+.volet h2
+{
+    margin-bottom: 0;
+}
+
+.proj:hover .volet
+{
+    left: 0;
+    transition: left 1s;
+}
+
+.eye
+{
+    position: relative;
+    color: #FFF;
+    padding-left: 5%;
+}
+
+.eye h2
+{
+    font-size: 1.2em;
+    font-family: 'roboto-medium';
+}
+
+.eye p
+{
+    font-size: 1em;
+    font-family: 'Roboto-Light';
+}
+
+.eye i
+{
+    position: absolute;
+    top: -28px;
+    right: 7%;
+    width: 51px;
+    height: 51px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    background-color: #5CADD3;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Gestion de l'affichage en fonction du thème choisi*/
+
+#c_lft:target .thm2, #c_lft:target .thm3
+{
+    display: none;
+}
+
+#c_rgt:target .thm1, #c_rgt:target .thm3
+{
+    display: none;
+}
+
+#rgt:target .thm1, #rgt:target .thm2
+{
+    display: none;
 }

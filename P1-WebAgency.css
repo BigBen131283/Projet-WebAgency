@@ -183,7 +183,7 @@ nav li:hover
     height: 34.375%;
     width: 40%;
     position: absolute;
-    top: 20%;
+    top: 150px;
     left: 10%;
 }
 
@@ -499,8 +499,7 @@ i
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     background-color: #F5F5F5;
 }
 
@@ -668,6 +667,7 @@ i
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .portfolio .proj
@@ -710,6 +710,7 @@ i
 .volet h2
 {
     margin-bottom: 0;
+    margin-top: 1%;
 }
 
 .proj:hover .volet
@@ -879,10 +880,65 @@ form .btn:hover
 
 /*Responsive*/
 
+@media screen and (max-width: 1024px)
+{
+    /*Accueil*/
+    #accueil h1
+    {
+        font-size: 1.5em;
+    }
+    
+    /*Nos services*/
+    .corpus
+    {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    .corpus ul
+    {
+        justify-content: space-around;
+    }
+
+    .desc
+    {
+        text-align: justify;
+        margin: 5px;
+    }
+
+    /*Nos projets*/
+    .eye i
+    {
+        right: 4%;
+        width: 43px;
+        height: 43px;
+        font-size: 1.5em;
+        top: -23px;
+    }
+
+    .nav-proj
+    {
+        width: 40%;
+    }
+
+    /*Contacts*/
+
+    #formulaire
+    {
+        width: 100%;
+        position: initial;
+    }
+
+    .calque
+    {
+        height: 600px;
+    }
+}
+
 @media screen and (max-width: 768px)
 {
     /*Accueil*/
-    .slider_css h1
+    #accueil h1
     {
         font-size: 1em;
     }
@@ -938,23 +994,11 @@ form .btn:hover
     }
 
     /*Nos Projets*/
-    .nav-proj ul
+    .nav-proj
     {
         width: 60%;
     }
 
-    /*Contacts*/
-
-    #formulaire
-    {
-        width: 100%;
-        position: initial;
-    }
-
-    .calque
-    {
-        height: 600px;
-    }
 }
 
 @media screen and (max-width: 320px)
@@ -966,6 +1010,11 @@ form .btn:hover
         justify-content: center;
     }
 
+    #Menu
+    {
+        position: initial;
+    }
+
     #logo
     {
         padding-top: 5px;
@@ -975,4 +1024,46 @@ form .btn:hover
     {
         padding: 0;
     }
+
+    nav
+    {
+        position: sticky;
+    }
+
+
+    /*Nos services*/
+    .corpus .apple
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .apple img
+    {
+        width: 100%;
+    }
+
+    .prez p
+    {
+        text-align: justify;
+    }
+
+    /*Nos projets*/
+    .nav-proj
+    {
+        width: 100%;
+    }
+
+    /*Contact*/
+    iframe
+    {
+        height: 400px;
+    }
+
+    .calque
+    {
+        height: 400px;
+    }
+
 }
